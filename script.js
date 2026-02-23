@@ -11,7 +11,7 @@ navLinks.forEach(link => {
         menu.classList.remove('active');
     });
 });
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwJ88JIfL-OzYCYBdIoEUEJT8U-rXWfTD83q7iKVPa5hHLPJFhEmB90elQ0Yln16D0r/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbw88lSsQ7_N6uCxkGt_ADSyYs2X2iMfySaTNvnyJzxTaSyEFDSWWj2S5Jh9zTzER4_9/exec'
 const form = document.forms['DataSheet']
 const btnSend = document.querySelector('.btn_send')
 
@@ -46,8 +46,4 @@ const btnSend = document.querySelector('.btn_send')
                 }, 3000);
             })
 	})
-function doPost(e) {
-  return ContentService
-    .createTextOutput(JSON.stringify({status:"ok"}))
-    .setMimeType(ContentService.MimeType.JSON);
-}
+console.log(form)
